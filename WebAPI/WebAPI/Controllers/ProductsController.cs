@@ -9,6 +9,9 @@ namespace WebAPI.Controllers
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
+
+
+
         private readonly IProductRepository _productRepository;
         public ProductsController(IProductRepository productRepository)
         {
@@ -31,15 +34,60 @@ namespace WebAPI.Controllers
         //}
 
         [HttpGet]
-        public async Task<List<Product>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            return await _productRepository.GetAllAsync();
+            var results = await _productRepository.GetAllAsync();
+            return Ok(results);
         }
 
         [HttpGet("{id}")]
-        public async Task<Product> GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            return await _productRepository.GetByIdAsync(id);
+            var data = await _productRepository.GetByIdAsync(id);
+            if (data == null)
+            {
+                return NotFound(id);
+            }
+            else
+            {
+                return Ok(data);
+            }
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create(Product product)
+        {
+            var addedProduct = await _productRepository.CreateAsync(product);
+            return Created(string.Empty, addedProduct);//boş bırakmak yerine okunabilirlik için bu şekilde yazdık.
+
+        }
+        [HttpPut]
+        public async Task<IActionResult> Update(Product product)
+        {
+            var checkedProduct = await _productRepository.GetByIdAsync(product.Id);
+            if (checkedProduct == null)
+            {
+                return NotFound(product.Id);
+            }
+            else
+            {
+                await _productRepository.UpdateAsync(product);
+                return NoContent();
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Remove(int id)
+        {
+            var checkedProduct = await _productRepository.GetByIdAsync(id);
+            if (checkedProduct == null)
+            {
+                return NotFound(id);
+            }
+            else
+            {
+                await _productRepository.RemoveAsync(id);
+                return NoContent();
+            }
         }
     }
 }
