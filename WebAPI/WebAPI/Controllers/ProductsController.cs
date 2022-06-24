@@ -89,5 +89,17 @@ namespace WebAPI.Controllers
                 return NoContent();
             }
         }
+
+        //api/products/upload
+        [HttpPost("upload")]
+        public async Task<IActionResult> Upload(IFormFile formFile)
+        {
+            var newName = Guid.NewGuid() + "." + Path.GetExtension(formFile.FileName);
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", newName);
+            var stream = new FileStream(path, FileMode.Create);
+            await formFile.CopyToAsync(stream);
+            return Created(string.Empty, formFile);
+        }
+
     }
 }
