@@ -1,10 +1,27 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+﻿@model List<ConsumeAPI.ResponseModel.ProductResponseModel>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>
             Web API Consume
         </title>
     </head>
     <body>
-        <p>MVC Works</p>
+        <p>@ViewBag.ResponseMessage</p>
+        <table>
+            <tr>
+                <th>Ürünün Adı</th>
+                <th>Ürünün Fiyatı</th>
+                <th>Ürünün Stoğu</th>
+            </tr>
+                @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.Stock</td>
+            </tr>
+        }
+        </table>
     </body>
 </html>

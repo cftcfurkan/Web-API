@@ -21,3 +21,5 @@ C:\Users\FURKAN\Desktop\Web Api Consume\WebAPI\ConsumeAPI\obj\Debug\net6.0\Consu
 C:\Users\FURKAN\Desktop\Web Api Consume\WebAPI\ConsumeAPI\obj\Debug\net6.0\ref\ConsumeAPI.dll
 C:\Users\FURKAN\Desktop\Web Api Consume\WebAPI\ConsumeAPI\obj\Debug\net6.0\ConsumeAPI.RazorAssemblyInfo.cache
 C:\Users\FURKAN\Desktop\Web Api Consume\WebAPI\ConsumeAPI\obj\Debug\net6.0\ConsumeAPI.RazorAssemblyInfo.cs
+C:\Users\FURKAN\Desktop\Web Api Consume\WebAPI\ConsumeAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\FURKAN\Desktop\Web Api Consume\WebAPI\ConsumeAPI\obj\Debug\net6.0\ConsumeAPI.csproj.CopyComplete

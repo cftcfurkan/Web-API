@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "J4Yx2EE3fAGh2x4Qmn5QuYj2at7VSqN1PGiCXd0hAxZaPE8S+E14A9NAAR4tVv9eu1uDp5zaLzjzcQqTzc6cjw==",
+  "dgSpecHash": "vOOdbatRnRxXrnIJFggbYFAbUBirm8yE7dCG7LJ8ovCwePT+xr5pmwfA6j8BVYah3AJj8tma0dtGiwuzZq0/Mw==",
   "success": true,
   "projectFilePath": "C:\\Users\\FURKAN\\Desktop\\Web Api Consume\\WebAPI\\ConsumeAPI\\ConsumeAPI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\FURKAN\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
