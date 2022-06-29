@@ -1,6 +1,4 @@
 # Web API & Web Api Consume
-
-                --- İşlenilen Konular ---
                       -- Web API --
  1) Rest && RestFul
  2) Endpoint Yapısı
