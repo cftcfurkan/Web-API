@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using WebAPI.Data;
 using WebAPI.Interfaces;
 
 namespace WebAPI.Controllers
 {
 
+    [EnableCors]
     [ApiController]
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase

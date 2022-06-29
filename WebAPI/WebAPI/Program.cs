@@ -8,6 +8,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IDummyRepository, DummyRepository>();
 
+builder.Services.AddCors(cors =>
+{
+    cors.AddPolicy("CorsPolicy", opt =>
+    {
+        opt.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+        //opt.WithOrigins() .AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+        // apiyi belirli sitelere açmak için WithOrigins() kullanýlýr. 
+    });
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 
@@ -30,6 +40,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
+
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
