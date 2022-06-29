@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XQw+7SLr8aE57SzTzQku3NZCytJ27funqtY5XdOgImg=",
+  "Hash": "4m9a3B13qtQlAUWCs6FUnC1li09OnLWmj2JMsm0ZGI0=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "WebAPI\\wwwroot",
       "Source": "WebAPI",
-      "ContentRoot": "C:\\Users\\FURKAN\\Desktop\\Web API\\WebAPI\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\FURKAN\\Desktop\\Web Api Consume\\WebAPI\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "Pattern": "**"
     }
