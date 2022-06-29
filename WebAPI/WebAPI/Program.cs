@@ -6,6 +6,7 @@ using WebAPI.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IDummyRepository, DummyRepository>();
 
 // Add services to the container.
 builder.Services.AddControllers();

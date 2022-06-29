@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAPI.Data;
 
@@ -11,9 +12,10 @@ using WebAPI.Data;
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(ProductContext))]
-    partial class ProductContextModelSnapshot : ModelSnapshot
+    [Migration("20220629061825_m5")]
+    partial class m5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,7 +53,7 @@ namespace WebAPI.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2022, 6, 28, 9, 21, 50, 492, DateTimeKind.Local).AddTicks(467),
+                            CreatedDate = new DateTime(2022, 6, 28, 9, 18, 25, 457, DateTimeKind.Local).AddTicks(9055),
                             Name = "Bilgisayar",
                             Price = 1000m,
                             Stock = 500
@@ -59,7 +61,7 @@ namespace WebAPI.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2022, 6, 27, 9, 21, 50, 492, DateTimeKind.Local).AddTicks(480),
+                            CreatedDate = new DateTime(2022, 6, 27, 9, 18, 25, 457, DateTimeKind.Local).AddTicks(9071),
                             Name = "Telefon",
                             Price = 1800m,
                             Stock = 700
@@ -67,7 +69,7 @@ namespace WebAPI.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2022, 6, 25, 9, 21, 50, 492, DateTimeKind.Local).AddTicks(482),
+                            CreatedDate = new DateTime(2022, 6, 25, 9, 18, 25, 457, DateTimeKind.Local).AddTicks(9072),
                             Name = "Klavye",
                             Price = 200m,
                             Stock = 300
