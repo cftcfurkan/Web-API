@@ -16,7 +16,9 @@
             </p>          
         }
         }
-        <form asp-action="Create" asp-controller="Home" method="post">
+        <h1>Ürün Güncelle</h1>
+        <form asp-action="Update" asp-controller="Home" method="post">
+            <input type="hidden" asp-for="@Model.Id" />
             <label>Ürün Adı : </label>
             <input type="text" asp-for="@Model.Name"/>
             <br />
