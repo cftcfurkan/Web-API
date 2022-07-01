@@ -1,37 +1,11 @@
 {
   "Version": 1,
-  "Hash": "wHy/vte6A8nANeqhDGGk3Kb+U/XMWXT5S6F5ZgxDTHk=",
+  "Hash": "7/8N/7vR8Gil4oF52j1JyaDaDh/w/bwrwTANJiMV94U=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "WebAPI\\wwwroot",
-      "Source": "WebAPI",
-      "ContentRoot": "C:\\Users\\FURKAN\\Desktop\\Web Api Consume\\WebAPI\\WebAPI\\wwwroot\\",
-      "BasePath": "_content/WebAPI",
-      "Pattern": "**"
-    }
-  ],
-  "Assets": [
-    {
-      "Identity": "C:\\Users\\FURKAN\\Desktop\\Web Api Consume\\WebAPI\\WebAPI\\wwwroot\\43dcdbd0-6476-4bab-aa3d-b651dbc8d6be..docx",
-      "SourceId": "WebAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\FURKAN\\Desktop\\Web Api Consume\\WebAPI\\WebAPI\\wwwroot\\",
-      "BasePath": "_content/WebAPI",
-      "RelativePath": "43dcdbd0-6476-4bab-aa3d-b651dbc8d6be..docx",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\43dcdbd0-6476-4bab-aa3d-b651dbc8d6be..docx"
-    }
-  ]
+  "DiscoveryPatterns": [],
+  "Assets": []
 }

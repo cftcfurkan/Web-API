@@ -230,11 +230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FURKAN\\Desktop\\Web Api Consume\\WebAPI\\ConsumeAPI\\ConsumeAPI.csproj",
+      "projectUniqueName": "C:\\Users\\FURKAN\\Documents\\GitHub\\JsonWebToken\\WebAPI\\ConsumeAPI\\ConsumeAPI.csproj",
       "projectName": "ConsumeAPI",
-      "projectPath": "C:\\Users\\FURKAN\\Desktop\\Web Api Consume\\WebAPI\\ConsumeAPI\\ConsumeAPI.csproj",
+      "projectPath": "C:\\Users\\FURKAN\\Documents\\GitHub\\JsonWebToken\\WebAPI\\ConsumeAPI\\ConsumeAPI.csproj",
       "packagesPath": "C:\\Users\\FURKAN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FURKAN\\Desktop\\Web Api Consume\\WebAPI\\ConsumeAPI\\obj\\",
+      "outputPath": "C:\\Users\\FURKAN\\Documents\\GitHub\\JsonWebToken\\WebAPI\\ConsumeAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -116,6 +116,8 @@ namespace ConsumeAPI.Controllers
             await client.PostAsync("http://localhost:5194/api/products/upload", formData);
             return RedirectToAction("Index");
 
+            
+
         }
     } 
 }
