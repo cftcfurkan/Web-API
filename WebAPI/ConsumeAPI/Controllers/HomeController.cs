@@ -95,5 +95,27 @@ namespace ConsumeAPI.Controllers
             await client.DeleteAsync($"http://localhost:5194/api/products/{id}");
             return RedirectToAction("Index");
         }
-    }
+        public IActionResult Upload()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Upload(IFormFile file)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var stream = new MemoryStream();
+            await file.CopyToAsync(stream);
+            var bytes = stream.ToArray();
+
+            ByteArrayContent content = new ByteArrayContent(bytes);
+            content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(file.ContentType);
+            MultipartFormDataContent formData = new MultipartFormDataContent();
+            formData.Add(content,"formFile",file.FileName);
+
+            await client.PostAsync("http://localhost:5194/api/products/upload", formData);
+            return RedirectToAction("Index");
+
+        }
+    } 
 }
