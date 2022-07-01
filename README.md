@@ -18,3 +18,8 @@
  3) UpdateProducts
  4) RemoveProducts
  5) FileUpload
+
+                  -- Json Web Token --
+ 1) AddBearerToken JWT
+ 2) Configuration Done.
+ 3) Authentication && Authorization
