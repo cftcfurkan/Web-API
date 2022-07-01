@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using WebAPI.Data;
 using WebAPI.Interfaces;
@@ -21,6 +22,7 @@ namespace WebAPI.Controllers
         }
 
 
+
         //[HttpGet]
         //public IActionResult GetProducts()
         //{
@@ -34,7 +36,7 @@ namespace WebAPI.Controllers
         //    return Ok(new[] { new { Name = "Bilgisayar", Price = 2000 } });
 
         //}
-
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -44,6 +46,8 @@ namespace WebAPI.Controllers
 
         //api/products/1   => [FromRoute] demek default olarak gelir.
         //api/products?id=1 => [FromQuery] olarak belirtirsek 
+        [Authorize(Roles = "Admin")]
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
